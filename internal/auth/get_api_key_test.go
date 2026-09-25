@@ -8,7 +8,7 @@ import (
 
 func TestAPIKey(t *testing.T) {
 	headers := http.Header{}
-	headers.Add("Authorization", "Api_Key BOOTDEV")
+	headers.Add("Authorization", "ApiKey BOOTDEV")
 	got, err := GetAPIKey(headers)
 	if err != nil {
 		t.Fatalf("expected no error, got: %v", err)
